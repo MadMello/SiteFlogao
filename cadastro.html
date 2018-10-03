@@ -11,40 +11,17 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     </head>
-    <body style="background-color: #f5f5f5">
+    <body style="background-color: #f8f9fa!important">
         
         <header class="container-fluid">
-            <div class="row">
-                <div class="col-sm">
-                  <img src="logo_maior.png" class="img-fluid">
-                </div>
-                <div class="col-sm" style="margin-top: 5px">
-                     <div class="input-group mb-3">
-                      <input type="text" class="form-control" placeholder="Procure um perfil ou uma categoria" aria-label="Recipient's username" aria-describedby="button-addon2">
-                      <div class="input-group-append">
-                        <button class="btn btn-outline-secondary" type="button" id="button-addon2">Buscar</button>
-                      </div>
-                    </div>
-                </div>
-                <div class="col-sm d-flex flex-row-reverse">
-                  <ul class="nav nav-pills" style="margin-top: 5px">
-                      <li class="nav-item">
-                        <a class="nav-link" href="flogao.html">Página inicial</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="perfil.html">Login</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Cadastre-se</a>
-                      </li>
-                    </ul>
-                </div>
-          </div>
+            <div class="row"  style="padding: 1%;background-color: #3a3d3f;">
+                    <a href="flogao.html"> <img src="logo_maior.png" class="img-fluid"></a>
+            </div>
         </header>
-            <div class="row flex-xl-nowrap">
+            <div class="row flex-xl-nowrap"  style="padding:2%">
                 <div class="col-12 col-md-3 col-xl-2"></div>
                 <div class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content">
-                    <form>
+                    <form action="login.html">
                       <div class="form-row">
                         <div class="form-group col-md-6">
                           <label for="inputEmail4">Email</label>
@@ -54,9 +31,14 @@
                           <label for="inputPassword4">Senha</label>
                           <input type="password" class="form-control" id="inputPassword4" placeholder="Senha">
                         </div>
-                          <div class="form-group col-md-6">
-                          <label for="inputPassword4">Nome do seu flogão</label>
-                          <input type="text" class="form-control" id="inputPassword4" placeholder="http://flogao.com.br/">
+                          <div class="form-group col-md-6" style="padding-top:2%">
+                              <label class="sr-only" for="inlineFormInputGroupUsername2"></label>
+                              <div class="input-group mb-2 mr-sm-2">
+                                <div class="input-group-prepend">
+                                  <div class="input-group-text">http//flogao.com.br/</div>
+                                </div>
+                                <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Nome do seu Flogão">
+                                </div>
                         </div>
                       </div>
                       <div class="form-group">
@@ -87,6 +69,7 @@
                             <option selected></option>
                             <option>Feminino</option>
                             <option>Masculino</option>
+                            <option>NdA</option>
                           </select>
                         </div>
                       </div>
@@ -99,13 +82,16 @@
                         </div>
                       </div>
                       <button type="submit" class="btn btn-primary">Cadastrar</button>
-                        <a class="nav-link" href="perfil.html">Já tem um login? Entre em sua conta!</a>
+                      <div class="alert alert-primary" style="margin-top:2%" role="alert">
+                        <a class="nav-link" href="login.html">Já tem um login? Entre em sua conta!</a>
+                      </div>
+                        
                     </form>
                 </div>
         </div>
         
     
-        <div class="d-flex flex-row-reverse flex-row-reverse fixed-bottom"><span class="border border-primary rounded" style="background-color: #e3f2fd;padding-left: 5%;padding-right: 5%; font-size: 20px">© 2004 - 2018 Flogão</span></div>
+        
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>

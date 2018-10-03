@@ -1,3 +1,43 @@
+@media only screen and (min-width: 600px) {
+  .form-group{
+    font-size: 130%;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #logologin{
+    width: 40%;
+  }
+  input[type=checkbox] {
+    transform: scale(1.5);
+    margin-top: 1%;
+  }
+  .btn{
+    width: 70%;
+    margin-left: 20%;
+  }
+}
+.content {
+  overflow: auto;
+  position: relative;
+}
+.content:before {
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -1;
+
+  display: block;
+  background-image: url('pizza.jpg');
+  background-size:cover;
+  width: 100%;
+  height: 100%;
+
+  -webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  -o-filter: blur(3px);
+  -ms-filter: blur(3px);
+  filter: blur(3px);
+}
 .fa {
   padding: 20px;
   font-size: 30px;
