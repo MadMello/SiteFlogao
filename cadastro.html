@@ -78,12 +78,36 @@
                             Receber newsletter
                           </label>
                         </div>
-                      </div>
-                      <button type="submit" class="btn btn-primary">Cadastrar</button><br>
-                      <div class="alert alert-primary d-inline-flex p-2" style="margin-top:2%" role="alert">
+                      
+                      <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" style="margin-top:1%" data-toggle="modal" data-target="#exampleModalCenter">
+                            Cadastrar
+                          </button>
+                          
+                          <!-- Modal -->
+                          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalCenterTitle">Cadastro concluído</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body text-center">
+                                  <h4>Bem-vindo ao flogão!</h4>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" onclick="window.location.href='login.html'" class="btn btn-primary">Fazer login</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- fim --><br>
+                      <div class="alert alert-primary d-inline-flex p-2" style="margin-top:1%" role="alert">
                         <a class="nav-link" href="login.html">Já tem um login? Entre em sua conta!</a>
                       </div>
-                        
+                    </div>
                     </form>
                 </div>
         </div>
