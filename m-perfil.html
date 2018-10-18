@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="perfil.css">
 </head>
 <script>
-    if (typeof window.orientation !== 'undefined') { 
-              window.location.href = 'm-perfil.html';
+    if (typeof window.orientation === 'undefined') { 
+              window.location.href = 'perfil.html';
              }
           </script>
 
@@ -26,8 +26,10 @@
         <div class="row" style="padding-top: 5px;background-color: #3a3d3f;">
             <div class="col-sm">
                 <a href="flogao.html"> <img src="logo_maior.png" class="img-fluid"></a>
+                <a class="btn btn-light	fa fa-user-circle-o" style="margin-left: 20%" href="login.html" role="button">  Log
+                    In</a>
             </div>
-            <div class="dropdown">
+            <div class="dropdown" style="margin-left: 30%; margin-right: 30%">
                 <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
                     Categorias
@@ -56,12 +58,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm d-flex flex-row-reverse">
-                <a class="btn btn-light	fa fa-user-circle-o login-m" style="margin:auto;margin-right: 0%" href="login.html"
-                    role="button">  Log
-                    In</a>
 
-            </div>
         </div>
     </header>
 
@@ -141,6 +138,9 @@
                                                 src="440342.jpg" data-holder-rendered="true"></a>
                                         <div class="card-body">
                                             <p class="card-text">Breve descrição da foto (limitado)...</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <small class="text-muted">3 dias atrás</small>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

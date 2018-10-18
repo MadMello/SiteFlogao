@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="perfil.css">
 </head>
 <script>
-    if (typeof window.orientation !== 'undefined') { 
-                  window.location.href = 'm-uma-foto-perfil.html';
+    if (typeof window.orientation === 'undefined') { 
+                  window.location.href = 'uma-foto-perfil.html';
                  }
               </script>
 
@@ -26,8 +26,10 @@
         <div class="row" style="padding-top: 5px;background-color: #3a3d3f;">
             <div class="col-sm">
                 <a href="flogao.html"> <img src="logo_maior.png" class="img-fluid"></a>
+                <a class="btn btn-light	fa fa-user-circle-o" style="margin-left: 20%" href="login.html" role="button">  Log
+                    In</a>
             </div>
-            <div class="dropdown">
+            <div class="dropdown" style="margin-left: 30%; margin-right: 30%">
                 <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
                     Categorias
@@ -56,12 +58,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm d-flex flex-row-reverse">
-                <a class="btn btn-light	fa fa-user-circle-o login-m" style="margin:auto;margin-right: 0%" href="login.html"
-                    role="button">  Log
-                    In</a>
 
-            </div>
         </div>
     </header>
 
@@ -88,6 +85,32 @@
                                 <li class="list-group-item">
                                     <h2 class="page-header">Comentários</h2>
 
+                                    <section class="comment-list">
+                                        <!-- First Comment -->
+
+                                        <figure class="thumbnail">
+
+                                            <header class="text-left">
+                                                <figcaption>
+                                                    <div class="comment-user"><a href="#" style="text-decoration:none;color: black"><img
+                                                                class="img-responsive" src="usuario-cmt.png" style="width:30px;height:30px">   Usuário</div></a>
+                                                </figcaption>
+                                            </header>
+                                        </figure>
+
+                                        <div class="comment-post">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                                commodo consequat.</p>
+                                        </div>
+                                        <time class="comment-date d-flex justify-content-end" datetime="16-12-2014 01:05"><i
+                                                class="fa fa-clock-o p-1"></i>
+                                            Há 1 hora</time>
+                                        <p class="text-right"><a href="#" class="btn btn-default btn-sm"><i class="fa fa-reply"></i>
+                                                reply</a></p>
+
+                                    </section>
                                     <section class="comment-list">
                                         <!-- First Comment -->
 
