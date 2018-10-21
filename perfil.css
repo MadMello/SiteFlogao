@@ -61,7 +61,11 @@
     color: #3B5998;
 }
 
+.shadow-sm {
+    transition: 0.4s;
+}
+
 .shadow-sm:hover {
-    transition: all 0.2s linear;
+
     transform: scale(1.1);
 }
